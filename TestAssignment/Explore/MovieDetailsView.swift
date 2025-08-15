@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct MovieDetailsView: View {
+    let movie:Movie
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            MovieRow(movie: movie, onTap: {})
+            Text("Language: \(movie.originalLanguage)").font(.system(size: 14)).fontWeight(.medium).frame(maxWidth:.infinity,alignment:.leading).padding(.vertical,10)
+            Text(movie.overview).font(.system(size: 14)).fontWeight(.regular).frame(maxWidth:.infinity,alignment:.leading).multilineTextAlignment(.leading).padding(.vertical,10)
+            
+            Spacer()
+        }
+        .padding(.horizontal,20)
+        .frame(maxWidth:.infinity,maxHeight: .infinity)
     }
-}
-
-#Preview {
-    MovieDetailsView()
 }

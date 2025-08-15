@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let noMoviesAvailable = "We are unable to fetch popular movies for now. Please try again, with a working connection."

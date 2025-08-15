@@ -7,11 +7,6 @@
 
 import Foundation
 
-struct MovieObject: Decodable, Hashable {
-    let page: Int
-    let results:[Movie]
-}
-
 struct Movie: Decodable, Hashable {
     let adult: Bool
     let backdropPath: String

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum APIEndpoints: String {
+    case discover = "discover/movie"
+}
