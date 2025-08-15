@@ -26,17 +26,17 @@ Other suggested bonus features were beyond the intended scope of this test assig
 
 - API URL and token are stored in Info.plist for security.
 
-- On receiving data, it’s decoded into a [Movie] (marked @Published) so the UI updates automatically.
+- On receiving data, it’s decoded into a [Movie] (marked @Published) so the UI updates automatically. (ExploreModel.swift)
 
-- The raw data is also saved as bytes to a local text file for offline use. If the API call fails, we load data from that file (fallback in the catch block).
+- The raw data is also saved as bytes to a local text file for offline use. If the API call fails, we load data from that file (fallback in the catch block). (ExploreModel.swift)
 
 **Other details:**
 
-- API calls arer done through APIHandler (It's a singleton)
+- API calls arer done through APIHandler (It's a singleton) (APIHandler.swift)
 
-- Pagination is handled with an integer counter. Pull-to-refresh loads the next page.
+- Pagination is handled with an integer counter. Pull-to-refresh loads the next page. (ExploreModel.swift)
 
-- The movie detail screen is straightforward and displays tapped movie details.
+- The movie detail screen is straightforward and displays tapped movie details. (MovieDetailsView.swift)
 
 
 https://github.com/user-attachments/assets/aa23441a-9731-4524-9f9d-4bc76ca4a890
