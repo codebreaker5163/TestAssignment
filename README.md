@@ -7,6 +7,8 @@ As requested, here’s my completed test assignment for the **iOS Developer** ro
 - **Pagination**: Starts from page 1 and loads the next page when the user performs *pull-to-refresh* on the list
 - **Movie List**: Displays poster, title, rating, and release date in each row
 - **Movie Details**: Tapping a movie opens a detailed view screen
+- **Offline Mode**: We are using a text file, to save bytes, and read it from that file in case any error occurs, including offline.
+  
 
 ### Notes
 As part of the optional bonus tasks, I have implemented *pull-to-refresh*.  
